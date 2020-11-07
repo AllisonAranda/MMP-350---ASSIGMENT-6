@@ -1,0 +1,26 @@
+/*
+font-family:'Lato', sans-serif;
+font-family:'Roboto', sans-serif;
+*/
+
+.post-text {
+    font-family: 'lato', sans-serif;
+    font-size: 200%;
+}
+
+.post-info{
+    font-family: 'roboto', sans-serif;
+    
+}
+#post-body{
+    font-family: 'lato', sans-serif;
+    font-size: 150%;
+}
+#submit-post{
+    font-family: 'lato', sans-serif;
+    font-size: 130%;
+}
+h1{
+    font-family: 'lato', sans-serif;
+   font-size: 300%;
+}

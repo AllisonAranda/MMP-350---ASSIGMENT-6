@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<htmnl>
+<head>
+    
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <h1><center><img src="images/LogoHazel.png"></center></h1> 
+    
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDK9exQFIJN27KhujSqQnEK5I2LLC9pejM",
+    authDomain: "hazel-69ca8.firebaseapp.com",
+    databaseURL: "https://hazel-69ca8.firebaseio.com",
+    projectId: "hazel-69ca8",
+    storageBucket: "hazel-69ca8.appspot.com",
+    messagingSenderId: "360420636221",
+    appId: "1:360420636221:web:37644140a405291b479c54",
+    measurementId: "G-ND4QEVXEHF"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</head>
+    
+<body>
+<div id="container">
+
+<div id="heading">
+<hi>Publising a Post to a Database</hi>
+<h4>Log in</h4>    
+    </div>
+    
+<!-- elements to let user login -->
+<div id="login">
+    <input type="text" id="login-email" placeholder="Email">
+    <input type="password" id="login-password" placeholder="Password">
+    <button id="login-button">Login</button>
+    <p><a href="create.html">Create a new account</a></p>
+</div>    
+<!-- elements in case user in logged in -->
+<div id="user-info">
+    hello
+<div id="user-name"></div>
+    <button id="logout-button">Log out</button>
+    </div>    
+<!-- elements to let user write a new post -->
+<div id="write-post">
+<div>
+    <textarea id="post-body" placeholder="create a post"></textarea></div>
+<div>
+    <button id="submit-post">Publish</button>
+</div>    
+</div>
+<!-- elements to show the post -->
+<div id="posts">
+<div class="post">
+</div>    
+</div>    
+    
+</div> <!-- end of container -->
+<!-- Scripts -->
+<script src="js/helpers.js"></script>
+<script src="js/publish.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/displayPosts.js"></script>    
+
+<script>
+    fb.loadPosts();
+</script>    
+    
+</body>    
+</htmnl>
+ 
